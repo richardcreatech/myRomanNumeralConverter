@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+}
+
+body{
+    background-color: rgb(18, 18, 18);
+}
+
+
+header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50rem;
+}
+
+header{
+    padding: 30px;
+    background-color: rgba(245, 245, 245, 0.036);
+    box-shadow: 0 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#info{
+    display: flex;
+    gap: 50px;
+}
+
+#info .det, #send, input{
+    background-color: whitesmoke;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#info .det{
+    height: 40px;
+    background-color: rgba(245, 245, 245, 0.219);
+    color: whitesmoke;
+    border: solid;
+}
+
+
+
+
+
+section{
+    width: 100%;
+}
+
+main{
+    overflow: hidden;
+    display: flex;
+     gap: 100px;
+}
+.aside{
+    position: sticky;
+    padding-top: 40px;
+    justify-content: center;
+    color: aliceblue;
+    width: 20vw;
+    background-color: rgba(0, 0, 0, 0.367);
+    display: flex;
+    height: 100vh;
+}
+
+.aside ul{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 40px;
+}
+
+input{
+    width: 70vw;
+    padding-left: 50px;
+}
+
+input, #convert-btn{
+    height: 30px;
+    border: none;
+}
+
+#convert-btn{
+    background-color: rgba(211, 209, 209, 0.997);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+}
+
+.textMe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+}
+
+@media(max-width: 1000px){
+
+
+
+    aside{
+        display: none;
+    }
+
+    .aside{
+        display: none;
+    }
+
+    main{
+
+    }
+
+    .processor{
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #convert-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+    }
+}
+
+.bubble{
+    background-color: rgba(240, 248, 255, 0.082);
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+
+    margin: 50px;
+    padding: 10px;
+}
+
+#output{
+    overflow: auto;
+}
+
+aside{
+    overflow: hidden;
+}
